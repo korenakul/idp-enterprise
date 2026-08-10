@@ -1,0 +1,82 @@
+{
+  "app": {
+    "name": "TrainPlex DIP",
+    "version": "2.0.0",
+    "log_level": "INFO",
+    "debug": false,
+    "timezone": "UTC"
+  },
+  "paths": {
+    "input_dir": "data/input",
+    "output_dir": "data/output",
+    "processed_dir": "data/processed",
+    "cache_dir": "data/cache",
+    "models_dir": "data/models",
+    "logs_dir": "logs"
+  },
+  "ocr": {
+    "engines": ["tesseract", "gemini", "aws_textract", "azure_ocr", "google_vision"],
+    "default_engine": "tesseract",
+    "languages": ["eng", "hin", "spa", "fra", "deu"],
+    "confidence_threshold": 0.8,
+    "batch_size": 10
+  },
+  "ai": {
+    "models": {
+      "classification": "distilbert-base-uncased",
+      "extraction": "gemini-1.5-flash",
+      "ner": "en_core_web_sm",
+      "layout_detection": "layoutlmv3"
+    },
+    "batch_size": 32,
+    "max_sequence_length": 512,
+    "temperature": 0.1
+  },
+  "api": {
+    "host": "0.0.0.0",
+    "port": 8000,
+    "workers": 4,
+    "rate_limit": 100,
+    "timeout": 300,
+    "cors_origins": ["*"]
+  },
+  "database": {
+    "type": "postgresql",
+    "host": "localhost",
+    "port": 5432,
+    "name": "trainplex_dip",
+    "pool_size": 10,
+    "max_overflow": 20
+  },
+  "queue": {
+    "type": "redis",
+    "host": "localhost",
+    "port": 6379,
+    "queue_name": "dip_tasks",
+    "max_jobs": 1000
+  },
+  "aws": {
+    "region": "us-east-1",
+    "textract_s3_bucket": "trainplex-documents"
+  },
+  "azure": {
+    "ocr_endpoint": null,
+    "ocr_key": null
+  },
+  "google": {
+    "vision_api_key": null,
+    "document_ai_project_id": null
+  },
+  "integration": {
+    "erp": {"enabled": false, "type": "sap", "batch_size": 100},
+    "crm": {"enabled": false, "type": "salesforce", "batch_size": 50},
+    "database": {"enabled": false, "type": "postgresql", "batch_size": 1000},
+    "email": {"enabled": false, "smtp_server": "localhost"}
+  },
+  "monitoring": {
+    "metrics": true,
+    "tracing": true,
+    "health_check_interval": 30,
+    "alert_threshold": 0.95
+  }
+}
