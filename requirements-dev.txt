@@ -1,0 +1,17 @@
+# Development dependencies
+pytest==7.4.3
+pytest-cov==4.1.0
+flake8==7.0.0
+pylint==3.0.2
+mypy==1.6.1
+pdoc3==0.10.0
+black==23.11.0
+isort==5.12.0
+types-requests==2.31.0.6
+types-PyYAML==6.0.12
+
+# Optional for advanced features
+pytesseract==0.3.10
+Pillow==10.1.0
+google-generativeai==0.3.2
+boto3==1.33.6
