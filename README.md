@@ -734,4 +734,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - GitHub: [korenakul/idp-enterprise](https://github.com/korenakul/idp-enterprise)
 - Issues: [GitHub Issues](https://github.com/korenakul/idp-enterprise/issues)
-- Email: support@idpenterprise.com
+- Email: korenakul1@gmail.com
