@@ -1,5 +1,5 @@
 """
-Document Classifier for TrainPlex Document Intelligence Platform.
+Document Classifier for IDP Enterprise Document Intelligence Platform.
 ML-based document classification with 100+ categories.
 """
 
@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Dict, Any, List, Optional
 import logging
 
-logger = logging.getLogger('trainplex.ml.classifier')
+logger = logging.getLogger('idp.ml.classifier')
 
 
 class DocumentClassifier:

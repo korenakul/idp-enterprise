@@ -1,4 +1,4 @@
-# TrainPlex Document Intelligence Platform Requirements
+# IDP Enterprise Document Intelligence Platform Requirements
 # Core dependencies
 pyyaml>=6.0
 python-dotenv>=1.0

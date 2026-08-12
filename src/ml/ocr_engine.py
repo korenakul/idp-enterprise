@@ -1,5 +1,5 @@
 """
-OCR Engine implementations for TrainPlex Document Intelligence Platform.
+OCR Engine implementations for IDP Enterprise Document Intelligence Platform.
 """
 
 import os
@@ -8,7 +8,7 @@ from typing import Dict, Any, List, Optional
 from pathlib import Path
 import logging
 
-logger = logging.getLogger('trainplex.ml.ocr_engine')
+logger = logging.getLogger('idp.ml.ocr_engine')
 
 
 class BaseOCREngine:
@@ -110,7 +110,7 @@ class AWSlextractEngine(BaseOCREngine):
             textract = boto3.client('textract', region_name=self.region)
             
             # Upload to S3 first
-            bucket = self.config.get('s3_bucket', 'trainplex-documents')
+            bucket = self.config.get('s3_bucket', 'idp-documents')
             key = f'textract/{Path(image_path).name}'
             s3.upload_file(image_path, bucket, key)
             

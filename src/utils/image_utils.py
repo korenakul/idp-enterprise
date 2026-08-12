@@ -1,5 +1,5 @@
 """
-Image utilities for TrainPlex Document Intelligence Platform.
+Image utilities for IDP Enterprise Document Intelligence Platform.
 """
 
 import os
@@ -8,7 +8,7 @@ from typing import List, Optional, Tuple
 from datetime import datetime
 import logging
 
-logger = logging.getLogger('trainplex.utils.image_utils')
+logger = logging.getLogger('idp.utils.image_utils')
 
 
 def get_image_info(path: str) -> dict:

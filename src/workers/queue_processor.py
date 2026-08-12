@@ -7,7 +7,7 @@ from typing import Dict, Any, Optional
 from pathlib import Path
 import logging
 
-logger = logging.getLogger('trainplex.workers.queue_processor')
+logger = logging.getLogger('idp.workers.queue_processor')
 
 
 class QueueProcessor:

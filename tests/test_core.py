@@ -11,7 +11,7 @@ def test_get_config():
     """Test configuration loading."""
     config = get_config()
     assert config is not None
-    assert config.get('app.name') == 'TrainPlex DIP'
+    assert config.get('app.name') == 'IDP Enterprise DIP'
     assert config.get('app.version') == '2.0.0'
 
 

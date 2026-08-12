@@ -1,5 +1,5 @@
 """
-Configuration management for TrainPlex Document Intelligence Platform.
+Configuration management for IDP Enterprise Document Intelligence Platform.
 """
 
 import os
@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Dict, Any, Optional
 import logging
 
-logger = logging.getLogger('trainplex.core.config')
+logger = logging.getLogger('idp.core.config')
 
 
 def safe_json_load(path: str, default: Any = None) -> Any:
@@ -42,14 +42,14 @@ class ConfigManager:
     
     def _load_config(self, config_path: Optional[str]) -> Dict[str, Any]:
         defaults = {
-            'app': {'name': 'TrainPlex DIP', 'version': '2.0.0', 'log_level': 'INFO', 'debug': False, 'timezone': 'UTC'},
+            'app': {'name': 'IDP Enterprise DIP', 'version': '2.0.0', 'log_level': 'INFO', 'debug': False, 'timezone': 'UTC'},
             'paths': {'input_dir': 'data/input', 'output_dir': 'data/output', 'processed_dir': 'data/processed', 'cache_dir': 'data/cache', 'models_dir': 'data/models', 'logs_dir': 'logs'},
             'ocr': {'engines': ['tesseract', 'gemini', 'aws_textract', 'azure_ocr', 'google_vision'], 'default_engine': 'tesseract', 'languages': ['eng', 'hin', 'spa', 'fra'], 'confidence_threshold': 0.8},
             'ai': {'models': {'classification': 'distilbert-base-uncased', 'extraction': 'gemini-1.5-flash', 'ner': 'en_core_web_sm'}, 'batch_size': 32, 'max_sequence_length': 512},
             'api': {'host': '0.0.0.0', 'port': 8000, 'workers': 4, 'rate_limit': 100, 'timeout': 300},
-            'database': {'type': 'postgresql', 'host': 'localhost', 'port': 5432, 'name': 'trainplex_dip', 'pool_size': 10},
+            'database': {'type': 'postgresql', 'host': 'localhost', 'port': 5432, 'name': 'idp_dip', 'pool_size': 10},
             'queue': {'type': 'redis', 'host': 'localhost', 'port': 6379, 'queue_name': 'dip_tasks'},
-            'aws': {'region': 'us-east-1', 'textract_s3_bucket': 'trainplex-documents'},
+            'aws': {'region': 'us-east-1', 'textract_s3_bucket': 'idp-documents'},
             'integration': {'erp': {'enabled': False, 'type': 'sap'}, 'crm': {'enabled': False, 'type': 'salesforce'}},
             'monitoring': {'metrics': True, 'tracing': True, 'health_check_interval': 30}
         }

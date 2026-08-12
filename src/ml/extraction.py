@@ -1,5 +1,5 @@
 """
-Information extraction module for TrainPlex Document Intelligence Platform.
+Information extraction module for IDP Enterprise Document Intelligence Platform.
 """
 
 from typing import Dict, Any, List, Optional
@@ -7,7 +7,7 @@ from dataclasses import dataclass, field
 from datetime import datetime
 import logging
 
-logger = logging.getLogger('trainplex.ml.extraction')
+logger = logging.getLogger('idp.ml.extraction')
 
 
 @dataclass

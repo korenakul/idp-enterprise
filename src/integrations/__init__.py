@@ -1,3 +1,3 @@
 """
-Integrations module for TrainPlex Document Intelligence Platform.
+Integrations module for IDP Enterprise Document Intelligence Platform.
 """

@@ -1,5 +1,5 @@
 """
-API module for TrainPlex Document Intelligence Platform.
+API module for IDP Enterprise Document Intelligence Platform.
 """
 
 from .routes import router

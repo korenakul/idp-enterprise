@@ -1,5 +1,5 @@
 """
-Models module for TrainPlex Document Intelligence Platform.
+Models module for IDP Enterprise Document Intelligence Platform.
 Pydantic schemas and data models for the document processing system.
 """
 

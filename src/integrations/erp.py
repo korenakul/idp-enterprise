@@ -1,12 +1,12 @@
 """
-ERP integration module for TrainPlex Document Intelligence Platform.
+ERP integration module for IDP Enterprise Document Intelligence Platform.
 """
 
 from typing import Dict, Any, List, Optional
 from pathlib import Path
 import logging
 
-logger = logging.getLogger('trainplex.integrations.erp')
+logger = logging.getLogger('idp.integrations.erp')
 
 
 class ERPConnector:

@@ -1,3 +1,3 @@
 """
-CLI module for TrainPlex Document Intelligence Platform.
+CLI module for IDP Enterprise Document Intelligence Platform.
 """

@@ -1,5 +1,5 @@
 """
-Document Service for TrainPlex Document Intelligence Platform.
+Document Service for IDP Enterprise Document Intelligence Platform.
 Handles document processing, extraction, and workflow orchestration.
 """
 
@@ -9,7 +9,7 @@ from typing import Dict, Any, List, Optional
 from datetime import datetime
 import logging
 
-logger = logging.getLogger('trainplex.services.document_service')
+logger = logging.getLogger('idp.services.document_service')
 
 
 class DocumentService:

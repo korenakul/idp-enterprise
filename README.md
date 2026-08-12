@@ -1,4 +1,4 @@
-# TrainPlex Document Intelligence Platform (DIP)
+# IDP Enterprise Document Intelligence Platform (DIP)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -46,7 +46,7 @@ Enterprise-grade intelligent document processing system with OCR, AI extraction,
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                        TrainPlex DIP Platform                        │
+│                    IDP Enterprise DIP Platform                       │
 ├─────────────────────────────────────────────────────────────────────┤
 │                                                                       │
 │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐               │
@@ -175,8 +175,8 @@ brew install redis
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/trainplex-dip.git
-cd trainplex-dip
+git clone https://github.com/your-username/idp-enterprise.git
+cd idp-enterprise
 ```
 
 2. **Create virtual environment**
@@ -200,7 +200,7 @@ cp config.example.json config.json
 5. **Initialize the database**
 ```bash
 # Create database
-createdb trainplex_dip
+createdb idp_dip
 
 # Run migrations (if using alembic)
 # alembic upgrade head
@@ -222,13 +222,13 @@ python main.py --mode worker
 
 ```bash
 # Build the image
-docker build -t trainplex-dip .
+docker build -t idp-enterprise .
 
 # Run with Docker Compose
 docker-compose up -d
 
 # Or run directly
-docker run -p 8000:8000 trainplex-dip
+docker run -p 8000:8000 idp-enterprise
 ```
 
 ## Quick Start
@@ -403,7 +403,7 @@ Once the server is running, visit:
 ```json
 {
   "app": {
-    "name": "TrainPlex DIP",
+    "name": "IDP Enterprise DIP",
     "version": "2.0.0",
     "log_level": "INFO",
     "debug": false,
@@ -447,7 +447,7 @@ Once the server is running, visit:
     "type": "postgresql",
     "host": "localhost",
     "port": 5432,
-    "name": "trainplex_dip",
+    "name": "idp_dip",
     "pool_size": 10,
     "max_overflow": 20
   },
@@ -460,7 +460,7 @@ Once the server is running, visit:
   },
   "aws": {
     "region": "us-east-1",
-    "textract_s3_bucket": "trainplex-documents"
+    "textract_s3_bucket": "idp-documents"
   },
   "integration": {
     "erp": {"enabled": false, "type": "sap", "batch_size": 100},
@@ -480,7 +480,7 @@ Once the server is running, visit:
 ```bash
 export DIP_CONFIG_PATH=/path/to/config.json
 export DIP_API_KEY=your_api_key
-export DIP_DB_URL=postgresql://user:pass@localhost/trainplex_dip
+export DIP_DB_URL=postgresql://user:pass@localhost/idp_dip
 ```
 
 ## Project Structure
@@ -612,7 +612,7 @@ pytest tests/test_api.py -v
 
 #### Build Image
 ```bash
-docker build -t trainplex-dip:latest .
+docker build -t idp-enterprise:latest .
 ```
 
 #### Run Container
@@ -620,8 +620,8 @@ docker build -t trainplex-dip:latest .
 docker run -p 8000:8000 \
   -v $(pwd)/data:/app/data \
   -v $(pwd)/config:/app/config \
-  --name trainplex-dip \
-  trainplex-dip:latest
+  --name idp-enterprise \
+  idp-enterprise:latest
 ```
 
 #### Docker Compose
@@ -732,6 +732,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-- GitHub: [your-username/trainplex-dip](https://github.com/your-username/trainplex-dip)
-- Issues: [GitHub Issues](https://github.com/your-username/trainplex-dip/issues)
-- Email: support@trainplex.com
+- GitHub: [korenakul/idp-enterprise](https://github.com/korenakul/idp-enterprise)
+- Issues: [GitHub Issues](https://github.com/korenakul/idp-enterprise/issues)
+- Email: support@idpenterprise.com

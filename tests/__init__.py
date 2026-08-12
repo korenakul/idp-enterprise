@@ -1,1 +1,1 @@
-"""Tests for TrainPlex Document Intelligence Platform."""
+"""Tests for IDP Enterprise Document Intelligence Platform."""

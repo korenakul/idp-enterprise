@@ -1,5 +1,5 @@
 """
-Document processing pipeline for TrainPlex Document Intelligence Platform.
+Document processing pipeline for IDP Enterprise Document Intelligence Platform.
 """
 
 from typing import Dict, Any, List, Optional
@@ -11,7 +11,7 @@ from src.core import get_config
 from src.ml.ocr_engine import get_ocr_engine
 from src.ml.extraction import DocumentExtractor, ExtractedDocument
 
-logger = logging.getLogger('trainplex.pipeline')
+logger = logging.getLogger('idp.pipeline')
 
 
 class DocumentPipeline:

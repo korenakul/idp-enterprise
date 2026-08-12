@@ -1,5 +1,5 @@
 """
-Text utilities for TrainPlex Document Intelligence Platform.
+Text utilities for IDP Enterprise Document Intelligence Platform.
 """
 
 import re
@@ -7,7 +7,7 @@ from typing import List, Optional, Dict, Any
 from collections import Counter
 import logging
 
-logger = logging.getLogger('trainplex.utils.text_utils')
+logger = logging.getLogger('idp.utils.text_utils')
 
 
 def clean_text(text: str) -> str:

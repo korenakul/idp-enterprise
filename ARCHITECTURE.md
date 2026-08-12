@@ -1,8 +1,8 @@
-# TrainPlex Document Intelligence Platform - Architecture Documentation
+# IDP Enterprise Document Intelligence Platform - Architecture Documentation
 
 ## Overview
 
-This document provides detailed technical architecture information for the TrainPlex Document Intelligence Platform.
+This document provides detailed technical architecture information for the IDP Enterprise Document Intelligence Platform.
 
 ## System Architecture
 

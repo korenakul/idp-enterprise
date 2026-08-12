@@ -1,3 +1,3 @@
 """
-Services module for TrainPlex Document Intelligence Platform.
+Services module for IDP Enterprise Document Intelligence Platform.
 """

@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "TrainPlex DIP",
+    "name": "IDP Enterprise DIP",
     "version": "2.0.0",
     "log_level": "INFO",
     "debug": false,
@@ -44,7 +44,7 @@
     "type": "postgresql",
     "host": "localhost",
     "port": 5432,
-    "name": "trainplex_dip",
+    "name": "idp_dip",
     "pool_size": 10,
     "max_overflow": 20
   },
@@ -57,7 +57,7 @@
   },
   "aws": {
     "region": "us-east-1",
-    "textract_s3_bucket": "trainplex-documents"
+    "textract_s3_bucket": "idp-documents"
   },
   "azure": {
     "ocr_endpoint": null,

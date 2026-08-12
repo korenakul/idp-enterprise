@@ -1,5 +1,5 @@
 """
-Document Processor Worker for TrainPlex Document Intelligence Platform.
+Document Processor Worker for IDP Enterprise Document Intelligence Platform.
 Handles background document processing with OCR and AI extraction.
 """
 
@@ -10,7 +10,7 @@ from datetime import datetime
 import logging
 import json
 
-logger = logging.getLogger('trainplex.workers.processor')
+logger = logging.getLogger('idp.workers.processor')
 
 
 class DocumentProcessor:
@@ -84,7 +84,7 @@ class DocumentProcessor:
             engine_config = {
                 'api_key': self.config.get(f'api_keys.{engine_name}'),
                 'region': self.config.get(f'aws.region', 'us-east-1'),
-                's3_bucket': self.config.get('aws.textract_s3_bucket', 'trainplex-documents')
+                's3_bucket': self.config.get('aws.textract_s3_bucket', 'idp-documents')
             }
             
             engine = get_ocr_engine(engine_name, engine_config)

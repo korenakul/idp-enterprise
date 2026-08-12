@@ -1,5 +1,5 @@
 """
-File utilities for TrainPlex Document Intelligence Platform.
+File utilities for IDP Enterprise Document Intelligence Platform.
 """
 
 import os
@@ -8,7 +8,7 @@ from typing import List, Optional
 from datetime import datetime
 import logging
 
-logger = logging.getLogger('trainplex.utils.file_utils')
+logger = logging.getLogger('idp.utils.file_utils')
 
 
 def get_file_info(path: str) -> dict:

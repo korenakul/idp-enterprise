@@ -1,5 +1,5 @@
 """
-Database models for TrainPlex Document Intelligence Platform.
+Database models for IDP Enterprise Document Intelligence Platform.
 """
 
 from sqlalchemy import Column, Integer, String, DateTime, Text, JSON, Boolean, Float

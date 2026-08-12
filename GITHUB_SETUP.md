@@ -1,9 +1,9 @@
-# Push TrainPlex DIP to GitHub
+# Push IDP Enterprise DIP to GitHub
 
 ## Step 1: Create GitHub Repository
 
 1. Go to https://github.com/new
-2. Enter repository name: `trainplex-dip`
+2. Enter repository name: `idp-enterprise`
 3. Choose visibility (Public/Private)
 4. Don't initialize with README (we already have one)
 5. Click "Create repository"
@@ -13,7 +13,7 @@
 ### If using HTTPS
 ```bash
 cd /home/nakul/idp-enterprise
-git remote add origin https://github.com/YOUR_USERNAME/trainplex-dip.git
+git remote add origin https://github.com/korenakul/idp-enterprise.git
 git branch -M main
 git push -u origin main
 ```
@@ -21,7 +21,7 @@ git push -u origin main
 ### If using SSH
 ```bash
 cd /home/nakul/idp-enterprise
-git remote add origin git@github.com:YOUR_USERNAME/trainplex-dip.git
+git remote add origin git@github.com:korenakul/idp-enterprise.git
 git branch -M main
 git push -u origin main
 ```
@@ -51,14 +51,14 @@ Then run:
 ```bash
 cd /home/nakul/idp-enterprise
 gh auth login
-gh repo create trainplex-dip --public --source=. --remote=origin
+gh repo create idp-enterprise --public --source=. --remote=origin
 git push -u origin main
 ```
 
 ## Project Structure on GitHub
 
 ```
-trainplex-dip/
+idp-enterprise/
 ├── src/                      # Source code
 │   ├── core/                 # Core utilities
 │   ├── ml/                   # ML & OCR
@@ -101,7 +101,7 @@ Create a `.env` file locally (NOT committed to Git):
 
 ```bash
 # Database
-DATABASE_URL=postgresql://user:pass@localhost/trainplex_dip
+DATABASE_URL=postgresql://user:pass@localhost/idp_dip
 
 # API Keys (for external services)
 GOOGLE_API_KEY=your_google_api_key

@@ -1,5 +1,5 @@
 """"""
-Database module for TrainPlex Document Intelligence Platform.
+Database module for IDP Enterprise Document Intelligence Platform.
 SQLAlchemy models and database manager for the document processing system.
 """
 

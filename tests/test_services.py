@@ -22,9 +22,19 @@ def test_document_service_process():
     config = get_config()
     service = DocumentService(config.config)
     
-    result = service.process_document('/tmp/test.txt', 'general_document')
-    assert 'document_id' in result
-    assert result.get('status') == 'completed'
+    # Create a test file first
+    import tempfile
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False) as f:
+        f.write("Test document content")
+        test_file = f.name
+    
+    try:
+        result = service.process_document(test_file, 'general_document')
+        assert 'document_id' in result
+        assert result.get('status') == 'completed'
+    finally:
+        import os
+        os.unlink(test_file)
 
 
 if __name__ == '__main__':

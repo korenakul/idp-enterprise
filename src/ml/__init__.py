@@ -1,3 +1,3 @@
 """
-ML module for TrainPlex Document Intelligence Platform.
+ML module for IDP Enterprise Document Intelligence Platform.
 """

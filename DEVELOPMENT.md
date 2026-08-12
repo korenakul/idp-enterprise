@@ -1,4 +1,4 @@
-# TrainPlex Document Intelligence Platform - Development Guide
+# IDP Enterprise Document Intelligence Platform - Development Guide
 
 ## Getting Started
 
@@ -13,8 +13,8 @@
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/trainplex-dip.git
-cd trainplex-dip
+git clone https://github.com/korenakul/idp-enterprise.git
+cd idp-enterprise
 ```
 
 2. **Create virtual environment**
@@ -38,7 +38,7 @@ cp config.example.json config.json
 
 5. **Set up database**
 ```bash
-createdb trainplex_dip_dev
+createdb idp_dip_dev
 # Run migrations if using Alembic
 alembic upgrade head
 ```
@@ -142,7 +142,7 @@ def process_document(
 ```python
 import logging
 
-logger = logging.getLogger('trainplex.module.name')
+logger = logging.getLogger('idp.module.name')
 
 def process_document(path: str):
     logger.debug(f"Processing: {path}")
@@ -410,6 +410,6 @@ lsof -ti:8000 | xargs kill
 
 ### Getting Help
 
-- GitHub Issues: https://github.com/your-username/trainplex-dip/issues
-- Documentation: https://trainplex-dip.readthedocs.io
-- Email: dev@trainplex.com
+- GitHub Issues: https://github.com/korenakul/idp-enterprise/issues
+- Documentation: https://idp-enterprise.readthedocs.io
+- Email: dev@idpenterprise.com

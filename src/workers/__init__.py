@@ -1,3 +1,3 @@
 """
-Worker module for TrainPlex Document Intelligence Platform.
+Worker module for IDP Enterprise Document Intelligence Platform.
 """

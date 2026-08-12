@@ -1,5 +1,5 @@
 """
-Utilities module for TrainPlex Document Intelligence Platform.
+Utilities module for IDP Enterprise Document Intelligence Platform.
 """
 
 from . import file_utils, text_utils, image_utils

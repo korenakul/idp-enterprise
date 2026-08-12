@@ -1,5 +1,5 @@
 """
-Main entry point for TrainPlex Document Intelligence Platform.
+Main entry point for IDP Enterprise Document Intelligence Platform.
 """
 
 import sys
@@ -19,12 +19,12 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s | %(name)s | %(levelname)s | %(message)s'
 )
-logger = logging.getLogger('trainplex.main')
+logger = logging.getLogger('idp.main')
 
 
 def main():
     """Main entry point."""
-    parser = argparse.ArgumentParser(description='TrainPlex Document Intelligence Platform')
+    parser = argparse.ArgumentParser(description='IDP Enterprise Document Intelligence Platform')
     parser.add_argument('--mode', choices=['cli', 'api', 'worker', 'batch'], default='cli',
                        help='Run mode')
     parser.add_argument('--config', '-c', help='Config file path')
@@ -36,7 +36,7 @@ def main():
         os.environ['DIP_CONFIG_PATH'] = args.config
     
     config = get_config()
-    logger.info(f"Starting TrainPlex DIP v{config.get('app.version')}")
+    logger.info(f"Starting IDP Enterprise DIP v{config.get('app.version')}")
     
     if args.mode == 'cli':
         from src.cli.cli import main as cli_main
@@ -48,7 +48,7 @@ def main():
     elif args.mode == 'batch':
         run_batch_processor(config)
     
-    logger.info("TrainPlex DIP stopped")
+    logger.info("IDP Enterprise DIP stopped")
 
 
 def run_api_server(config: dict):

@@ -1,11 +1,11 @@
 """
-CRM integration module for TrainPlex Document Intelligence Platform.
+CRM integration module for IDP Enterprise Document Intelligence Platform.
 """
 
 from typing import Dict, Any, List, Optional
 import logging
 
-logger = logging.getLogger('trainplex.integrations.crm')
+logger = logging.getLogger('idp.integrations.crm')
 
 
 class CRMConnector:

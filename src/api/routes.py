@@ -1,12 +1,12 @@
 """
-API routes for TrainPlex Document Intelligence Platform.
+API routes for IDP Enterprise Document Intelligence Platform.
 """
 
 from fastapi import APIRouter, UploadFile, File, HTTPException, BackgroundTasks
 from typing import Optional
 import logging
 
-logger = logging.getLogger('trainplex.api.routes')
+logger = logging.getLogger('idp.api.routes')
 router = APIRouter(prefix="/api/v1", tags=["documents"])
 
 

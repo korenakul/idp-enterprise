@@ -1,5 +1,5 @@
 """
-Command-line interface for TrainPlex Document Intelligence Platform.
+Command-line interface for IDP Enterprise Document Intelligence Platform.
 """
 
 import sys
@@ -8,13 +8,13 @@ from pathlib import Path
 from typing import Optional
 import logging
 
-logger = logging.getLogger('trainplex.cli')
+logger = logging.getLogger('idp.cli')
 
 
 def main() -> int:
     """Main CLI entry point."""
     parser = argparse.ArgumentParser(
-        description='TrainPlex Document Intelligence Platform CLI',
+        description='IDP Enterprise Document Intelligence Platform CLI',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:

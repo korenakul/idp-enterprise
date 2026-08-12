@@ -1,5 +1,5 @@
 """
-Information Extractor for TrainPlex Document Intelligence Platform.
+Information Extractor for IDP Enterprise Document Intelligence Platform.
 Template-based and ML-based information extraction.
 """
 
@@ -7,7 +7,7 @@ import re
 from typing import Dict, Any, List, Optional
 import logging
 
-logger = logging.getLogger('trainplex.ml.extractor')
+logger = logging.getLogger('idp.ml.extractor')
 
 
 class InformationExtractor:

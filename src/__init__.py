@@ -1,5 +1,5 @@
 """
-TrainPlex Document Intelligence Platform (DIP)
+IDP Enterprise Document Intelligence Platform (DIP)
 Enterprise-grade intelligent document processing system.
 
 Version: 2.0.0

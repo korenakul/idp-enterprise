@@ -1,5 +1,5 @@
 """
-FastAPI server for TrainPlex Document Intelligence Platform.
+FastAPI server for IDP Enterprise Document Intelligence Platform.
 """
 
 from fastapi import FastAPI, UploadFile, File, HTTPException, BackgroundTasks
@@ -12,11 +12,11 @@ import os
 from src.core import get_config
 from src.services.document_service import DocumentService
 
-logger = logging.getLogger('trainplex.api.server')
+logger = logging.getLogger('idp.api.server')
 config = get_config()
 
 app = FastAPI(
-    title="TrainPlex Document Intelligence Platform",
+    title="IDP Enterprise Document Intelligence Platform",
     description="Enterprise-grade intelligent document processing API",
     version="2.0.0"
 )

@@ -1,5 +1,5 @@
 """
-Database manager for TrainPlex Document Intelligence Platform.
+Database manager for IDP Enterprise Document Intelligence Platform.
 """
 
 from sqlalchemy import create_engine
@@ -8,7 +8,7 @@ from typing import Dict, Any, Optional
 from contextlib import contextmanager
 import logging
 
-logger = logging.getLogger('trainplex.database.manager')
+logger = logging.getLogger('idp.database.manager')
 
 
 class DatabaseManager:
@@ -19,7 +19,7 @@ class DatabaseManager:
         self.db_type = config.get('type', 'postgresql')
         self.host = config.get('host', 'localhost')
         self.port = config.get('port', 5432)
-        self.name = config.get('name', 'trainplex_dip')
+        self.name = config.get('name', 'idp_dip')
         self._engine = None
         self._session = None
     
